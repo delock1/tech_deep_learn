@@ -15,8 +15,11 @@ class Neuron:
             self.__weights[i] = self.__rangeMin + (self.__rangeMax - self.__rangeMin) * random()
 
     def activation_func(self):
-        return 1.0 / (1.0 + exp(-self.__net))
-
+        if self.activation_func()>=0:
+            retrurn 1.0
+        else:
+            return 0.0
+    
     def derivative(self):
         return self.activation_func() * (1.0 - self.activation_func())
 
