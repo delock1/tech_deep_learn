@@ -34,7 +34,7 @@ class Neuron:
 
     def get_weights(self):
         return self.__weights[1:]
-
+ 
     def get_bias(self):
         return self.__weights[0]
 
